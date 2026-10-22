@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Techvolt Software | Software Development | Coimbatore</title>
+    <meta name="description" content="Explore precision automatic watches, minimalist quartz timepieces, and digital tactical sports watches on our ecommerce catalog.">
+    <meta name="keywords" content="Techvolt Software, Software Development, luxury watches, automatic watch, quartz timepiece, chronograph">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.techvoltcoimbatore.com/watches.html">
+    <link rel="icon" type="image/png" href="assets/images/techvolt-software-development-brand-favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/techvolt-software-development-brand-favicon.png">
+    <meta property="og:site_name" content="TechVoltMart">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.techvoltcoimbatore.com/watches.html">
+    <meta property="og:title" content="Techvolt Software | Web Development | Luxury Watches & Timepieces">
+    <meta property="og:description" content="Explore precision automatic watches, minimalist quartz timepieces, and digital tactical sports watches on our ecommerce catalog.">
+    <meta property="og:image" content="https://www.techvoltcoimbatore.com/assets/images/techvolt-software-development-brand-logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Techvolt Software | Software Development | Luxury Watches & Timepieces">
+    <meta name="twitter:description" content="Explore precision automatic watches, minimalist quartz timepieces, and digital tactical sports watches on our ecommerce catalog.">
+    <meta name="twitter:image" content="https://www.techvoltcoimbatore.com/assets/images/techvolt-software-development-brand-logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/watches.css">
+    <link rel="stylesheet" href="css/cart-fly-animation.css">
+</head>
+<body>
+    <!-- Header -->
+    <!-- Reusable Navbar Component -->
+    <div id="navbar-placeholder"></div>
+
+    <section class="category-banner-section">
+        <div class="category-breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="sep">/</span>
+            <span class="active-crumb">Watches</span>
+        </div>
+        <div class="category-header-title-row">
+            <h1 class="category-page-title">Timepieces & Watches Collection</h1>
+            <span class="category-showing-count">- 5 items</span>
+        </div>
+    </section>
+
+    <!-- Backdrop Overlay for Filter Panel -->
+    <div class="filter-backdrop" id="filterBackdrop"></div>
+
+    <!-- Main Layout -->
+    <section class="category-page-layout">
+        <aside class="category-sidebar" id="categorySidebar">
+            <div class="sidebar-header-mobile d-lg-none d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
+                <h5 class="fw-bold mb-0">FILTERS</h5>
+                <button type="button" class="btn-close" id="btnCloseSidebar"></button>
+            </div>
+
+            <div class="filter-group">
+                <h4 class="sidebar-section-title">CATEGORIES</h4>
+                <ul class="filter-options-list">
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_all" data-group="category" value="all" checked> All Watches</span><span class="filter-count-myntra">(5)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_automatic" data-group="category" value="automatic"> Automatic</span><span class="filter-count-myntra">(2)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_quartz" data-group="category" value="quartz & slim"> Quartz & Slim</span><span class="filter-count-myntra">(2)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_digital" data-group="category" value="digital & tactical"> Digital & Tactical</span><span class="filter-count-myntra">(1)</span></label></li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h4 class="sidebar-section-title">BRAND <i class="bi bi-search sidebar-search-icon"></i></h4>
+                <ul class="filter-options-list">
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_seiko" data-group="brand" value="seiko"> SEIKO</span><span class="filter-count-myntra">(1)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_fossil" data-group="brand" value="fossil"> FOSSIL</span><span class="filter-count-myntra">(2)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_titan" data-group="brand" value="titan"> TITAN</span><span class="filter-count-myntra">(1)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_timex" data-group="brand" value="timex"> TIMEX</span><span class="filter-count-myntra">(1)</span></label></li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h4 class="sidebar-section-title">PRICE</h4>
+                <ul class="filter-options-list">
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_price_2000_5000" data-group="price" value="2000-5000"> ₹2,000 – ₹5,000</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_price_5000_9000" data-group="price" value="5000-9000"> ₹5,000 – ₹9,000</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_price_9000_15000" data-group="price" value="9000-15000"> ₹9,000 – ₹15,000</span></label></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="category-main-content">
+            <!-- 5 Columns Product Grid matching exact screenshot -->
+            <div class="products-grid">
+
+                <!-- Card 1: SEIKO Automatic Watch -->
+                <div class="product-card" data-images='["assets/images/techvolt-web-host-watch-1.png", "assets/images/techvolt-crm-watch-2.png", "assets/images/techvolt-software-dev-watch-3.png", "assets/images/techvolt-web-dev-watch-4.png"]' data-category="Watches" data-subcategory="Automatic" data-brand="SEIKO">
+                    <div class="product-image-wrapper">
+                        <span class="myntra-ad-badge">AD</span>
+                        <div class="myntra-rating-pill">
+                            <span>4.7</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">620</span>
+                        </div>
+                        <a href="product-watches.html?id=2">
+                            <img src="assets/images/techvolt-web-host-watch-1.png" class="product-img" alt="Vintage Mechanical Skeleton Watch" onerror="this.onerror=null; this.style.opacity='0';">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">SEIKO</span>
+                        <h3 class="product-name"><a href="product-watches.html?id=2">Vintage Mechanical Skeleton Watch</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 6499</span>
+                            <span class="original-price">Rs. 12999</span>
+                            <span class="discount-badge">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: FOSSIL Quartz Watch -->
+                <div class="product-card" data-images='["assets/images/techvolt-full-dev-watch-5.png", "assets/images/techvolt-mern-dev-watch-6.png", "assets/images/techvolt-php-dev-watch-7.png", "assets/images/techvolt-python-dev-watch-8.png"]' data-category="Watches" data-subcategory="Quartz & Slim" data-brand="FOSSIL">
+                    <div class="product-image-wrapper">
+                        <div class="myntra-rating-pill">
+                            <span>4.6</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">430</span>
+                        </div>
+                        <a href="product-watches.html?id=3">
+                            <img src="assets/images/techvolt-full-dev-watch-5.png" class="product-img" alt="Minimalist Leather Strap Slim Quartz Watch" onerror="this.onerror=null; this.style.opacity='0';">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">FOSSIL</span>
+                        <h3 class="product-name"><a href="product-watches.html?id=3">Minimalist Leather Strap Slim Quartz Watch</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 3999</span>
+                            <span class="original-price">Rs. 7999</span>
+                            <span class="discount-badge">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: TITAN Tactical Watch -->
+                <div class="product-card" data-images='["assets/images/techvolt-front-dev-watch-9.png", "assets/images/techvolt-back-dev-watch-10.png", "assets/images/techvolt-digital-marketing-watch-11.png", "assets/images/techvolt-crm-dev-watch-12.png"]' data-category="Watches" data-subcategory="Digital & Tactical" data-brand="TITAN">
+                    <div class="product-image-wrapper">
+                        <span class="myntra-ad-badge">AD</span>
+                        <div class="myntra-rating-pill">
+                            <span>4.8</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">540</span>
+                        </div>
+                        <a href="product-watches.html?id=6">
+                            <img src="assets/images/techvolt-front-dev-watch-9.png" class="product-img" alt="Solar Powered Tactical Outdoor Sports Watch" onerror="this.onerror=null; this.style.opacity='0';">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">TITAN</span>
+                        <h3 class="product-name"><a href="product-watches.html?id=6">Solar Powered Tactical Outdoor Sports Watch</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 3499</span>
+                            <span class="original-price">Rs. 6999</span>
+                            <span class="discount-badge">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: TIMEX Automatic Watch -->
+                <div class="product-card" data-images='["assets/images/techvolt-web-host-watch-13.png", "assets/images/techvolt-crm-watch-14.png", "assets/images/techvolt-software-dev-watch-15.png", "assets/images/techvolt-web-dev-watch-16.png"]' data-category="Watches" data-subcategory="Automatic" data-brand="TIMEX">
+                    <div class="product-image-wrapper">
+                        <div class="myntra-rating-pill">
+                            <span>4.9</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">1.1k</span>
+                        </div>
+                        <a href="product-watches.html?id=7">
+                            <img src="assets/images/techvolt-web-host-watch-13.png" class="product-img" alt="Moonphase Automatic Leather Watch" onerror="this.onerror=null; this.style.opacity='0';">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">TIMEX</span>
+                        <h3 class="product-name"><a href="product-watches.html?id=7">Moonphase Automatic Leather Watch</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 9999</span>
+                            <span class="original-price">Rs. 19999</span>
+                            <span class="discount-badge">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: FOSSIL Chronograph Watch -->
+                <div class="product-card" data-images='["assets/images/techvolt-full-dev-watch-17.png", "assets/images/techvolt-mern-dev-watch-18.png", "assets/images/techvolt-php-dev-watch-19.png", "assets/images/techvolt-python-dev-watch-20.png"]' data-category="Watches" data-subcategory="Quartz & Slim" data-brand="FOSSIL">
+                    <div class="product-image-wrapper">
+                        <div class="myntra-rating-pill">
+                            <span>4.8</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">920</span>
+                        </div>
+                        <a href="product-watches.html?id=10">
+                            <img src="assets/images/techvolt-full-dev-watch-17.png" class="product-img" alt="Classic Leather Chronograph Dial Watch - Dark Brown" onerror="this.onerror=null; this.style.opacity='0';">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">FOSSIL</span>
+                        <h3 class="product-name"><a href="product-watches.html?id=10">Classic Leather Chronograph Dial Watch - Dark Brown</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 5999</span>
+                            <span class="original-price">Rs. 11999</span>
+                            <span class="discount-badge">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </section>
+
+    <!-- Floating Sticky Elements -->
+
+    <button class="myntra-floating-bell-btn" title="Notifications">
+        <i class="bi bi-bell-fill"></i>
+    </button>
+    <!-- Footer -->
+    <!-- Reusable Footer Component -->
+    <div id="footer-placeholder"></div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/watches.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart-fly-animation.js"></script>
+    
+</body>
+</html>

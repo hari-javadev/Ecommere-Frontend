@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Techvolt Software | Python Development | Saibaba Colony</title>
+    <meta name="description" content="Shop fitted bedsheet sets, satin pillow covers, durable cookware, and home living decor essentials on our ecommerce website.">
+    <meta name="keywords" content="Techvolt Software, Python Development, home living, kitchen essentials, cookware, microfiber bedsheets">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.techvoltcoimbatore.com/home-kitchen.html">
+    <link rel="icon" type="image/png" href="assets/images/techvolt-software-development-brand-favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/techvolt-software-development-brand-favicon.png">
+    <meta property="og:site_name" content="TechVoltMart">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.techvoltcoimbatore.com/home-kitchen.html">
+    <meta property="og:title" content="Techvolt Software | Web Development | Home & Kitchen Essentials">
+    <meta property="og:description" content="Shop fitted bedsheet sets, satin pillow covers, durable cookware, and home living decor essentials on our ecommerce website.">
+    <meta property="og:image" content="https://www.techvoltcoimbatore.com/assets/images/techvolt-software-development-brand-logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Techvolt Software | Software Development | Home & Kitchen Essentials">
+    <meta name="twitter:description" content="Shop fitted bedsheet sets, satin pillow covers, durable cookware, and home living decor essentials on our ecommerce website.">
+    <meta name="twitter:image" content="https://www.techvoltcoimbatore.com/assets/images/techvolt-software-development-brand-logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home-kitchen.css">
+    <link rel="stylesheet" href="css/cart-fly-animation.css">
+</head>
+<body>
+    <!-- Header -->
+    <!-- Reusable Navbar Component -->
+    <div id="navbar-placeholder"></div>
+
+    <section class="category-banner-section">
+        <div class="category-breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="sep">/</span>
+            <span class="active-crumb">Home & Kitchen</span>
+        </div>
+        <div class="category-header-title-row">
+            <h1 class="category-page-title">Home & Kitchen — Kitchen Appliances Store</h1>
+            <span class="category-showing-count">- 4 items</span>
+        </div>
+    </section>
+
+    <!-- Backdrop Overlay for Filter Panel -->
+    <div class="filter-backdrop" id="filterBackdrop"></div>
+
+    <!-- Main Layout -->
+    <section class="category-page-layout">
+        <aside class="category-sidebar" id="categorySidebar">
+            <div class="sidebar-header-mobile d-lg-none d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
+                <h5 class="fw-bold mb-0">FILTERS</h5>
+                <button type="button" class="btn-close" id="btnCloseSidebar"></button>
+            </div>
+
+            <div class="filter-group">
+                <h4 class="sidebar-section-title">CATEGORIES</h4>
+                <ul class="filter-options-list">
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_all" data-group="category" value="all" checked> All Home & Kitchen</span><span class="filter-count-myntra">(4)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_bedding" data-group="category" value="bedding & linen"> Bedding & Linen</span><span class="filter-count-myntra">(2)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_kitchen" data-group="category" value="kitchen appliances"> Kitchen Appliances</span><span class="filter-count-myntra">(2)</span></label></li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h4 class="sidebar-section-title">BRAND <i class="bi bi-search sidebar-search-icon"></i></h4>
+                <ul class="filter-options-list">
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_sablehome" data-group="brand" value="sable home"> SABLE HOME</span><span class="filter-count-myntra">(1)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_prestige" data-group="brand" value="prestige"> PRESTIGE</span><span class="filter-count-myntra">(1)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_philips" data-group="brand" value="philips"> PHILIPS</span><span class="filter-count-myntra">(1)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_kitchencraft" data-group="brand" value="kitchen craft"> KITCHEN CRAFT</span><span class="filter-count-myntra">(1)</span></label></li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h4 class="sidebar-section-title">PRICE</h4>
+                <ul class="filter-options-list">
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_price_1000_1500" data-group="price" value="1000-1500"> Rs. 1000 to Rs. 1500</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_price_1500_2000" data-group="price" value="1500-2000"> Rs. 1500 to Rs. 2000</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_price_2000_3000" data-group="price" value="2000-3000"> Rs. 2000 to Rs. 3000</span></label></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="category-main-content">
+            <!-- 5 Columns Product Grid matching exact screenshot -->
+            <div class="products-grid">
+                <!-- Card 1: Product 1 (bb2) (4 images) -->
+                <div class="product-card" data-images='["assets/images/techvolt-web-host-tawa-1.png","assets/images/techvolt-crm-tawa-2.png","assets/images/techvolt-software-dev-tawa-3.png","assets/images/techvolt-web-dev-tawa-4.png"]' data-category="Home & Kitchen" data-subcategory="Kitchen Appliances" data-brand="SABLE HOME">
+                    <div class="product-image-wrapper">
+                        <div class="myntra-rating-pill">
+                            <span>4.8</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">940</span>
+                        </div>
+                        <a href="product-home-kitchen.html?id=1">
+                            <img src="assets/images/techvolt-web-host-tawa-1.png" class="product-img" alt="Premium Microfiber Fitted Bedsheet Set with Pillow Covers">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">SABLE HOME</span>
+                        <h3 class="product-name"><a href="product-home-kitchen.html?id=1">Premium Microfiber Fitted Bedsheet Set with Pillow Covers</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 1499</span>
+                            <span class="original-price">Rs. 2999</span>
+                            <span class="discount-badge">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Product 2 (bb3) (4 images) -->
+                <div class="product-card" data-images='["assets/images/techvolt-full-dev-tawa-5.png","assets/images/techvolt-mern-dev-tawa-6.png","assets/images/techvolt-php-dev-tawa-7.png","assets/images/techvolt-python-dev-tawa-8.png"]' data-category="Home & Kitchen" data-subcategory="Kitchen Appliances" data-brand="SABLE HOME">
+                    <div class="product-image-wrapper">
+                        <div class="myntra-rating-pill">
+                            <span>4.9</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">1.15k</span>
+                        </div>
+                        <a href="product-home-kitchen.html?id=2">
+                            <img src="assets/images/techvolt-full-dev-tawa-5.png" class="product-img" alt="Luxury Satin Finish Cotton Double Bedsheet Set">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">PRESTIGE</span>
+                        <h3 class="product-name"><a href="product-home-kitchen.html?id=2">Luxury Satin Finish Cotton Double Bedsheet Set</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 1899</span>
+                            <span class="original-price">Rs. 3799</span>
+                            <span class="discount-badge">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Product 3 (bb4) (4 images) -->
+                <div class="product-card" data-images='["assets/images/techvolt-front-dev-tawa-9.png","assets/images/techvolt-back-dev-tawa-10.png","assets/images/techvolt-digital-marketing-tawa-11.png","assets/images/techvolt-crm-dev-tawa-12.png"]' data-category="Home & Kitchen" data-subcategory="Kitchen Appliances" data-brand="SABLE HOME">
+                    <div class="product-image-wrapper">
+                        <div class="myntra-rating-pill">
+                            <span>4.7</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">820</span>
+                        </div>
+                        <a href="product-home-kitchen.html?id=3">
+                            <img src="assets/images/techvolt-front-dev-tawa-9.png" class="product-img" alt="Ultra Soft Breathable Printed Bedsheet Set">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">PHILIPS</span>
+                        <h3 class="product-name"><a href="product-home-kitchen.html?id=3">Ultra Soft Breathable Printed Bedsheet Set</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 1299</span>
+                            <span class="original-price">Rs. 2599</span>
+                            <span class="discount-badge">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Product 4 (bb5) (4 images) -->
+                <div class="product-card" data-images='["assets/images/techvolt-web-host-tawa-13.png","assets/images/techvolt-crm-tawa-14.png","assets/images/techvolt-software-dev-tawa-15.png","assets/images/techvolt-web-dev-tawa-16.png"]' data-category="Home & Kitchen" data-subcategory="Kitchen Appliances" data-brand="SABLE HOME">
+                    <div class="product-image-wrapper">
+                        <div class="myntra-rating-pill">
+                            <span>4.9</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">1.34k</span>
+                        </div>
+                        <a href="product-home-kitchen.html?id=4">
+                            <img src="assets/images/techvolt-web-host-tawa-13.png" class="product-img" alt="High Thread Count Jacquard Weave Bedsheet Set">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">KITCHEN CRAFT</span>
+                        <h3 class="product-name"><a href="product-home-kitchen.html?id=4">High Thread Count Jacquard Weave Bedsheet Set</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 2199</span>
+                            <span class="original-price">Rs. 4399</span>
+                            <span class="discount-badge">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </main>
+    </section>
+
+    <!-- Floating Sticky Elements -->
+
+    <button class="myntra-floating-bell-btn" title="Notifications">
+        <i class="bi bi-bell-fill"></i>
+    </button>
+    <!-- Footer -->
+    <!-- Reusable Footer Component -->
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/home-kitchen.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart-fly-animation.js"></script>
+    
+</body>
+</html>

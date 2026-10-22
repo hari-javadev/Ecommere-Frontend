@@ -1,0 +1,259 @@
+/* MEN / LOUNGEWEAR CATEGORY STYLES - MYNTRA MATCH */
+:root { color-scheme: light !important; }
+body { background-color: #ffffff !important; color: #282c3f !important; font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; color-scheme: light !important; }
+
+/* Breadcrumb & Header Title */
+.category-banner-section { background: #ffffff !important; padding: 20px 4% 10px 4% !important; border-bottom: none !important; margin-bottom: 5px; }
+.category-breadcrumb { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 400; margin-bottom: 14px; color: #282c3f; }
+.category-breadcrumb a { color: #282c3f; text-decoration: none; font-weight: 400; }
+.category-breadcrumb a:hover { color: #ff3f6c; text-decoration: none; }
+.category-breadcrumb .sep { color: #282c3f; margin: 0 2px; font-size: 12px; }
+.category-breadcrumb .active-crumb { color: #282c3f; font-weight: 700; }
+.category-header-title-row { display: flex; align-items: baseline; gap: 8px; }
+.category-page-title { font-family: Assistant, sans-serif; font-size: 16px; font-weight: 700; color: #282c3f; margin: 0; text-transform: capitalize; }
+.category-showing-count { font-size: 16px; font-weight: 400; color: #878b94; }
+
+/* Top Filter Control Bar */
+.myntra-top-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4%;
+  border-top: 1px solid #eaeaec;
+  border-bottom: 1px solid #eaeaec;
+  margin-bottom: 15px;
+  background: #ffffff;
+}
+
+.filter-title-clear-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.filter-title-bold {
+  font-size: 16px;
+  font-weight: 700;
+  color: #282c3f;
+  letter-spacing: 0.5px;
+}
+
+.btn-clear-all-pink {
+  background: none;
+  border: none;
+  color: #ff3f6c;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.top-filter-dropdowns {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.filter-dropdown-btn {
+  background: #ffffff;
+  border: 1px solid #d4d5d9;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #282c3f;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: border-color 0.2s ease;
+}
+
+.filter-dropdown-btn:hover {
+  border-color: #282c3f;
+}
+
+.filter-dropdown-btn i {
+  font-size: 11px;
+  color: #282c3f;
+}
+
+.sort-by-wrapper {
+  margin-left: auto;
+}
+
+.sort-select-myntra {
+  padding: 9px 16px;
+  border: 1px solid #d4d5d9;
+  border-radius: 2px;
+  background: #ffffff;
+  color: #282c3f;
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Page Layout & Sidebar */
+.category-page-layout { padding: 0 4% 60px 4%; display: flex; gap: 25px; align-items: flex-start; }
+.category-sidebar { width: 240px; flex-shrink: 0; background: #ffffff; border-right: 1px solid #eaeaec; padding-right: 20px; }
+.filter-group { margin-bottom: 20px; padding-bottom: 18px; border-bottom: 1px solid #eaeaec; }
+.filter-group:last-child { border-bottom: none; }
+.sidebar-section-title { font-size: 14px; font-weight: 700; color: #282c3f; margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between; letter-spacing: 0.5px; }
+.sidebar-search-icon { font-size: 13px; color: #282c3f; cursor: pointer; }
+.filter-options-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.filter-checkbox-label { display: flex; align-items: center; justify-content: space-between; font-size: 14px; color: #282c3f; cursor: pointer; }
+.filter-checkbox-label input[type="checkbox"] { accent-color: #ff3f6c; width: 16px; height: 16px; margin-right: 10px; cursor: pointer; }
+.filter-count-myntra { font-size: 12px; color: #94969f; font-weight: 400; }
+
+/* 5 Column Grid */
+.category-main-content { flex: 1; min-width: 0; }
+.products-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px 18px; margin-bottom: 40px; }
+
+.product-card {
+  background: #ffffff;
+  border-radius: 0;
+  overflow: hidden;
+  transition: box-shadow 0.25s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.product-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  background: #f8f8f8 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !im
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+.myntra-rating-pill {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 3px 7px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #282c3f;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 2;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.myntra-rating-pill .star-icon {
+  color: #149777;
+  font-size: 10px;
+}
+
+.myntra-rating-pill .rating-pipe {
+  color: #d4d5d9;
+  margin: 0 1px;
+}
+
+.myntra-rating-pill .rating-num-count {
+  color: #535766;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.product-info {
+  padding: 10px 10px 14px 10px;
+}
+
+.product-brand {
+  font-size: 16px;
+  font-weight: 700;
+  color: #282c3f;
+  display: block;
+  margin-bottom: 2px;
+  line-height: 1.2;
+}
+
+.product-name {
+  font-size: 14px;
+  font-weight: 400;
+  color: #535766;
+  margin: 0 0 6px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+.product-name a {
+  color: #535766;
+  text-decoration: none;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.current-price {
+  font-weight: 700;
+  color: #282c3f;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.discount-badge {
+  color: #ff905a;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.myntra-only-few-left {
+  color: #ff5722;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+@media (max-width: 1200px) {
+  .products-grid { grid-template-columns: repeat(4, 1fr); gap: 20px 16px; }
+}
+@media (max-width: 991px) {
+  .category-page-layout { flex-direction: column; padding: 0 3% 40px 3%; }
+  .category-sidebar { width: 100%; border-right: none; border-bottom: 1px solid #eaeaec; padding-right: 0; padding-bottom: 20px; }
+  .products-grid { grid-template-columns: repeat(3, 1fr); gap: 18px 14px; }
+}
+@media (max-width: 768px) {
+  .products-grid { grid-template-columns: repeat(2, 1fr); gap: 14px 10px; }
+  .category-toolbar { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+@media (max-width: 480px) {
+  .category-page-layout { padding: 0 10px 30px 10px; }
+  .products-grid { grid-template-columns: repeat(2, 1fr); gap: 10px 8px; }
+}

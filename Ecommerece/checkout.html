@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Techvolt Software | Web Development | Coimbatore</title>
+    <meta name="description" content="Review your order details, delivery address, and proceed to payment on our secure ecommerce checkout platform.">
+    <meta name="keywords" content="Techvolt Software, CRM Development, secure checkout, order summary, customer checkout">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://www.techvoltcoimbatore.com/checkout.html">
+    <link rel="icon" type="image/png" href="assets/images/techvolt-software-development-brand-favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/techvolt-software-development-brand-favicon.png">
+    <meta property="og:site_name" content="TechVoltMart">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.techvoltcoimbatore.com/checkout.html">
+    <meta property="og:title" content="Techvolt Software | Web Development | Secure Checkout">
+    <meta property="og:description" content="Review your order details, delivery address, and proceed to payment on our secure ecommerce checkout platform.">
+    <meta property="og:image" content="https://www.techvoltcoimbatore.com/assets/images/techvolt-software-development-brand-logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Techvolt Software | Full Stack Development | Secure Checkout">
+    <meta name="twitter:description" content="Review your order details, delivery address, and proceed to payment on our secure ecommerce checkout platform.">
+    <meta name="twitter:image" content="https://www.techvoltcoimbatore.com/assets/images/techvolt-software-development-brand-logo.png">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/cart-fly-animation.css">
+</head>
+<body>
+
+    <!-- Minimal Header for Checkout -->
+    <header class="checkout-header">
+        <div class="checkout-header-container">
+            <a href="index.html" class="brand-logo" style="text-decoration: none;"><img src="assets/images/techvolt-software-development-brand-logo.png" alt="TechVoltMart Logo" class="brand-logo-img"><span class="brand-logo-text" style="display: inline-flex; flex-direction: column; justify-content: center; line-height: 1.1;"><span class="brand-name" style="font-size: 22px; font-weight: 800; color: #282c3f; letter-spacing: 0.3px;">TechVoltMart</span><span class="brand-sample-tag" style="font-size: 9px; font-weight: 700; color: #8c8d94; letter-spacing: 2px; text-transform: uppercase; font-family: 'DM Sans', sans-serif; margin-top: 1px;">SAMPLE WEBSITE</span></span></a>
+            
+            <!-- Checkout Progress Stepper -->
+            <div class="checkout-stepper">
+                <div class="step-item completed">
+                    <span class="step-num"><i class="bi bi-check-lg"></i></span>
+                    <span class="step-label">Shopping Cart</span>
+                </div>
+                <div class="step-line active"></div>
+                <div class="step-item active">
+                    <span class="step-num">2</span>
+                    <span class="step-label">Shipping & Payment</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item">
+                    <span class="step-num">3</span>
+                    <span class="step-label">Order Confirmed</span>
+                </div>
+            </div>
+
+            <div class="header-right-group" style="display: flex; align-items: center; gap: 16px;">
+                <div class="checkout-security-badge">
+                    <i class="bi bi-shield-lock-fill text-success fs-5"></i>
+                    <div>
+                        <div class="sec-title">256-Bit SSL Encrypted</div>
+                        <div class="sec-subtitle">100% Secure Transaction</div>
+                    </div>
+                </div>
+                <a href="index.html" class="header-close-btn" title="Close and return to Home" aria-label="Close and return to Home">
+                    <i class="bi bi-x-lg"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Checkout Container -->
+    <main class="checkout-main-container">
+        <div class="container-fluid px-lg-5">
+            <div class="row g-4">
+
+                <!-- Left Column: Shipping & Payment Details -->
+                <div class="col-lg-7">
+                    
+                    <!-- Section 1: Contact Info -->
+                    <div class="checkout-card mb-4">
+                        <div class="card-section-title">
+                            <i class="bi bi-person-bounding-box text-purple me-2"></i> 1. Contact Information
+                        </div>
+                        <div class="row g-3 mt-1">
+                            <div class="col-md-6">
+                                <label class="form-label font-bold">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control checkout-input" value="ananya.sharma@example.com" placeholder="name@domain.com" id="custEmail" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label font-bold">Mobile Phone Number <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control checkout-input" value="+91 98765 43210" placeholder="+91 98765 43210" id="custPhone" required>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="chkWhatsAppUpdates" checked>
+                                    <label class="form-check-label small text-muted" for="chkWhatsAppUpdates">
+                                        Send order tracking updates & dispatch status via WhatsApp & SMS.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Delivery Address -->
+                    <div class="checkout-card mb-4">
+                        <div class="card-section-title">
+                            <i class="bi bi-geo-alt-fill text-purple me-2"></i> 2. Delivery Address
+                        </div>
+                        
+                        <div class="row g-3 mt-1">
+                            <div class="col-md-6">
+                                <label class="form-label font-bold">First Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control checkout-input" value="Ananya" id="custFirstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label font-bold">Last Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control checkout-input" value="Sharma" id="custLastName" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label font-bold">Street Address / House No. <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control checkout-input" value="Flat 402, Green Glen Layout, Bellandur" id="custAddress" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label font-bold">Pincode <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control checkout-input" value="560103" id="custPincode" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label font-bold">City / Town <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control checkout-input" value="Bengaluru" id="custCity" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label font-bold">State <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control checkout-input" value="Karnataka" id="custState" required>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Order Summary -->
+                <div class="col-lg-5">
+                    <div class="checkout-card summary-sticky-box position-sticky" style="top: 20px;">
+                        
+                        <h3 class="summary-title mb-3">Order Summary (3 Items)</h3>
+
+                        <!-- Items Preview List -->
+                        <div class="mini-order-items mb-3">
+                            <div class="mini-item-row">
+                                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=150&q=80" alt="Item">
+                                <div class="mini-item-info">
+                                    <div class="mini-item-name">Structured Calfskin Monogram Tote</div>
+                                    <div class="mini-item-meta">Qty: 1 • Cognac Brown</div>
+                                </div>
+                                <div class="mini-item-price">₹2,999</div>
+                            </div>
+
+                            <div class="mini-item-row">
+                                <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=150&q=80" alt="Item">
+                                <div class="mini-item-info">
+                                    <div class="mini-item-name">Automatic Chronograph Watch</div>
+                                    <div class="mini-item-meta">Qty: 1 • Steel Dial</div>
+                                </div>
+                                <div class="mini-item-price">₹4,999</div>
+                            </div>
+
+                            <div class="mini-item-row">
+                                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=150&q=80" alt="Item">
+                                <div class="mini-item-info">
+                                    <div class="mini-item-name">Embroidered Silk Anarkali Suit</div>
+                                    <div class="mini-item-meta">Qty: 1 • Size XL</div>
+                                </div>
+                                <div class="mini-item-price">₹3,499</div>
+                            </div>
+                        </div>
+
+                        <hr class="my-3">
+
+                        <!-- Pricing Rows -->
+                        <div class="summary-row">
+                            <span>Subtotal (Items Price)</span>
+                            <span>₹11,497</span>
+                        </div>
+                        <div class="summary-row text-success">
+                            <span>Express Shipping</span>
+                            <span class="fw-bold">FREE</span>
+                        </div>
+                        <div class="summary-row text-success">
+                            <span>Promo Discount (LUXE50)</span>
+                            <span>- ₹500</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Taxes & Duties</span>
+                            <span class="text-muted">Included</span>
+                        </div>
+
+                        <hr class="my-3">
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <div class="total-label fs-5 fw-bold text-dark">Total Amount</div>
+                                <div class="small text-muted">Includes GST & Insurance</div>
+                            </div>
+                            <div class="final-pay-price" id="payAmountDisplay">₹10,997</div>
+                        </div>
+
+                        <!-- Place Order Button -->
+                        <button class="btn-place-order" id="btnPlaceOrder" onclick="placeOrder()">
+                            <i class="bi bi-lock-fill me-2"></i> Pay ₹10,997 & Place Order
+                        </button>
+
+                        <div class="guarantee-box text-center mt-3">
+                            <i class="bi bi-shield-check text-success me-1"></i> Your payment is protected by <strong>256-Bit SSL Encryption</strong> & SABLE Buyer Protection.
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Order Success Confirmation Modal -->
+    <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4">
+                <div class="success-icon-wrap my-3">
+                    <i class="bi bi-check-circle-fill text-success" style="font-size: 64px;"></i>
+                </div>
+                <h2 class="fw-bold text-dark mb-2">Order Confirmed!</h2>
+                <p class="text-muted">Thank you, <strong id="confCustName">Ananya Sharma</strong>! Your order has been placed successfully.</p>
+                <div class="order-number-box my-3 p-3 bg-light rounded border">
+                    <div class="small text-muted">ORDER REFERENCE NUMBER</div>
+                    <div class="fs-4 fw-extrabold text-purple" id="confOrderNo">#SABLE-2026-98412</div>
+                </div>
+                <p class="small text-muted mb-4">A confirmation invoice and tracking updates have been sent to your email and WhatsApp.</p>
+                <a href="index.html" class="btn btn-purple btn-lg w-100 py-3 font-bold">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS & Checkout Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/cart-fly-animation.js"></script>
+</body>
+</html>

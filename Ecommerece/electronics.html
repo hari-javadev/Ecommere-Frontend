@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Techvolt Software | MERN Stack Development | Saibaba Colony</title>
+    <meta name="description" content="Discover 5G smartphones, wireless earbuds, bluetooth audio, and mobile accessories on our ecommerce store.">
+    <meta name="keywords" content="Techvolt Software, MERN Stack Development, smartphones, wireless earbuds, electronics store, gadgets">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.techvoltcoimbatore.com/electronics.html">
+    <link rel="icon" type="image/png" href="assets/images/techvolt-software-development-brand-favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/techvolt-software-development-brand-favicon.png">
+    <meta property="og:site_name" content="TechVoltMart">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.techvoltcoimbatore.com/electronics.html">
+    <meta property="og:title" content="Techvolt Software | Python Development | Electronics & Mobiles Store">
+    <meta property="og:description" content="Discover 5G smartphones, wireless earbuds, bluetooth audio, and mobile accessories on our ecommerce store.">
+    <meta property="og:image" content="https://www.techvoltcoimbatore.com/assets/images/techvolt-software-development-brand-logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Techvolt Software | MERN Stack Development | Electronics & Mobiles Store">
+    <meta name="twitter:description" content="Discover 5G smartphones, wireless earbuds, bluetooth audio, and mobile accessories on our ecommerce store.">
+    <meta name="twitter:image" content="https://www.techvoltcoimbatore.com/assets/images/techvolt-software-development-brand-logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/electronics.css">
+    <link rel="stylesheet" href="css/cart-fly-animation.css">
+</head>
+<body>
+    <!-- Header -->
+    <!-- Reusable Navbar Component -->
+    <div id="navbar-placeholder"></div>
+
+    <section class="category-banner-section">
+        <div class="category-breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="sep">/</span>
+            <span class="active-crumb">Electronics & Mobiles</span>
+        </div>
+        <div class="category-header-title-row">
+            <h1 class="category-page-title">Electronics & Mobiles Store</h1>
+            <span class="category-showing-count">- 7 items</span>
+        </div>
+    </section>
+
+    <!-- Backdrop Overlay for Filter Panel -->
+    <div class="filter-backdrop" id="filterBackdrop"></div>
+
+    <!-- Main Layout -->
+    <section class="category-page-layout">
+        <aside class="category-sidebar" id="categorySidebar">
+            <div class="sidebar-header-mobile d-lg-none d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
+                <h5 class="fw-bold mb-0">FILTERS</h5>
+                <button type="button" class="btn-close" id="btnCloseSidebar"></button>
+            </div>
+
+            <div class="filter-group">
+                <h4 class="sidebar-section-title">CATEGORIES</h4>
+                <ul class="filter-options-list">
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_all" data-group="category" value="all" checked> All Electronics & Mobiles</span><span class="filter-count-myntra">(7)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_mobiles" data-group="category" value="mobiles"> Mobiles</span><span class="filter-count-myntra">(5)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_airpods" data-group="category" value="airpods / earbuds"> AirPods / Earbuds</span><span class="filter-count-myntra">(2)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_holders" data-group="category" value="mobile holders"> Mobile Holders</span><span class="filter-count-myntra">(0)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_cables" data-group="category" value="data cables"> Data Cables</span><span class="filter-count-myntra">(0)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_banks" data-group="category" value="power banks"> Power Banks</span><span class="filter-count-myntra">(0)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_cat_cases" data-group="category" value="mobile back case"> Mobile Back Case</span><span class="filter-count-myntra">(0)</span></label></li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h4 class="sidebar-section-title">BRAND <i class="bi bi-search sidebar-search-icon"></i></h4>
+                <ul class="filter-options-list">
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_realme" data-group="brand" value="realme"> Realme</span><span class="filter-count-myntra">(1)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_samsung" data-group="brand" value="samsung"> Samsung</span><span class="filter-count-myntra">(1)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_iqoo" data-group="brand" value="iqoo"> iQOO</span><span class="filter-count-myntra">(1)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_oneplus" data-group="brand" value="oneplus"> OnePlus</span><span class="filter-count-myntra">(1)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_redmi" data-group="brand" value="redmi"> Redmi</span><span class="filter-count-myntra">(1)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_noise" data-group="brand" value="noise"> Noise</span><span class="filter-count-myntra">(1)</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_brand_philips" data-group="brand" value="philips"> Philips</span><span class="filter-count-myntra">(1)</span></label></li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h4 class="sidebar-section-title">PRICE</h4>
+                <ul class="filter-options-list">
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_price_under2000" data-group="price" value="under-2000"> Under ₹2,000</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_price_2000_50000" data-group="price" value="2000-50000"> ₹2,000 – ₹50,000</span></label></li>
+                    <li><label class="filter-checkbox-label"><span><input type="checkbox" id="side_price_above50000" data-group="price" value="above-50000"> Above ₹50,000</span></label></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="category-main-content">
+            <!-- 5 Columns Product Grid matching exact screenshot -->
+            <div class="products-grid">
+                <!-- Card 1: Realme Mobile Product 1 -->
+                <div class="product-card" data-images='["assets/images/techvolt-web-host-mobile-1.png", "assets/images/techvolt-crm-mobile-2.png", "assets/images/techvolt-software-dev-mobile-3.png", "assets/images/techvolt-web-dev-mobile-4.png"]' data-category="Electronics & Mobiles" data-subcategory="Mobiles" data-brand="Realme">
+                    <div class="product-image-wrapper">
+                        <span class="myntra-ad-badge">AD</span>
+                        <div class="myntra-rating-pill">
+                            <span>4.8</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">850</span>
+                        </div>
+                        <a href="product-electronics.html?id=1">
+                            <img src="assets/images/techvolt-web-host-mobile-1.png" class="product-img" alt="Realme 12 Pro+ 5G">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Realme</span>
+                        <h3 class="product-name"><a href="product-electronics.html?id=1">Realme 12 Pro+ 5G (Submarine Blue, 256 GB)</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 29999</span>
+                            <span class="original-price">Rs. 34999</span>
+                            <span class="discount-badge">(14% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Samsung Mobile Product 1 -->
+                <div class="product-card" data-images='["assets/images/techvolt-full-dev-mobile-5.png", "assets/images/techvolt-mern-dev-mobile-6.png", "assets/images/techvolt-php-dev-mobile-7.png", "assets/images/techvolt-python-dev-mobile-8.png"]' data-category="Electronics & Mobiles" data-subcategory="Mobiles" data-brand="Samsung">
+                    <div class="product-image-wrapper">
+                        <span class="myntra-ad-badge">AD</span>
+                        <div class="myntra-rating-pill">
+                            <span>4.9</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">1.4k</span>
+                        </div>
+                        <a href="product-electronics.html?id=2">
+                            <img src="assets/images/techvolt-full-dev-mobile-5.png" class="product-img" alt="Samsung Galaxy S24 Ultra 5G">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Samsung</span>
+                        <h3 class="product-name"><a href="product-electronics.html?id=2">Samsung Galaxy S24 Ultra 5G (Titanium Gray)</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 129999</span>
+                            <span class="original-price">Rs. 144999</span>
+                            <span class="discount-badge">(10% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: iQOO Mobile Product 1 -->
+                <div class="product-card" data-images='["assets/images/techvolt-front-dev-mobile-9.png", "assets/images/techvolt-back-dev-mobile-10.png", "assets/images/techvolt-digital-marketing-mobile-11.png", "assets/images/techvolt-crm-dev-mobile-12.png"]' data-category="Electronics & Mobiles" data-subcategory="Mobiles" data-brand="iQOO">
+                    <div class="product-image-wrapper">
+                        <div class="myntra-rating-pill">
+                            <span>4.7</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">620</span>
+                        </div>
+                        <a href="product-electronics.html?id=3">
+                            <img src="assets/images/techvolt-front-dev-mobile-9.png" class="product-img" alt="iQOO 12 5G">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">iQOO</span>
+                        <h3 class="product-name"><a href="product-electronics.html?id=3">iQOO 12 5G (Legendary White, 512GB)</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 52999</span>
+                            <span class="original-price">Rs. 59999</span>
+                            <span class="discount-badge">(11% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: OnePlus Mobile Product 1 -->
+                <div class="product-card" data-images='["assets/images/techvolt-web-host-mobile-13.png", "assets/images/techvolt-crm-mobile-14.png", "assets/images/techvolt-software-dev-mobile-15.png", "assets/images/techvolt-web-dev-mobile-16.png"]' data-category="Electronics & Mobiles" data-subcategory="Mobiles" data-brand="OnePlus">
+                    <div class="product-image-wrapper">
+                        <div class="myntra-rating-pill">
+                            <span>4.8</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">930</span>
+                        </div>
+                        <a href="product-electronics.html?id=4">
+                            <img src="assets/images/techvolt-web-host-mobile-13.png" class="product-img" alt="OnePlus 12 5G">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">OnePlus</span>
+                        <h3 class="product-name"><a href="product-electronics.html?id=4">OnePlus 12 5G (Flowy Emerald, 256 GB)</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 64999</span>
+                            <span class="original-price">Rs. 69999</span>
+                            <span class="discount-badge">(7% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Redmi Mobile Product 1 -->
+                <div class="product-card" data-images='["assets/images/techvolt-full-dev-mobile-17.png", "assets/images/techvolt-mern-dev-mobile-18.png", "assets/images/techvolt-php-dev-mobile-19.png", "assets/images/techvolt-python-dev-mobile-20.png"]' data-category="Electronics & Mobiles" data-subcategory="Mobiles" data-brand="Redmi">
+                    <div class="product-image-wrapper">
+                        <span class="myntra-ad-badge">AD</span>
+                        <div class="myntra-rating-pill">
+                            <span>4.6</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">1.1k</span>
+                        </div>
+                        <a href="product-electronics.html?id=5">
+                            <img src="assets/images/techvolt-full-dev-mobile-17.png" class="product-img" alt="Redmi Note 13 Pro+ 5G">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Redmi</span>
+                        <h3 class="product-name"><a href="product-electronics.html?id=5">Redmi Note 13 Pro+ 5G (Fusion Purple, 256 GB)</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 31999</span>
+                            <span class="original-price">Rs. 35999</span>
+                            <span class="discount-badge">(11% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Noise AirPods Product 1 -->
+                <div class="product-card" data-images='["assets/images/techvolt-front-dev-airpods-21.png", "assets/images/techvolt-back-dev-airpods-22.png", "assets/images/techvolt-digital-marketing-airpods-23.png", "assets/images/techvolt-crm-dev-airpods-24.png"]' data-category="Electronics & Mobiles" data-subcategory="AirPods / Earbuds" data-brand="Noise">
+                    <div class="product-image-wrapper">
+                        <div class="myntra-rating-pill">
+                            <span>4.7</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">2.5k</span>
+                        </div>
+                        <a href="product-electronics.html?id=6">
+                            <img src="assets/images/techvolt-front-dev-airpods-21.png" class="product-img" alt="Noise Buds VS102 Wireless Earbuds">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Noise</span>
+                        <h3 class="product-name"><a href="product-electronics.html?id=6">Noise Buds VS102 Wireless Earbuds</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 1299</span>
+                            <span class="original-price">Rs. 2999</span>
+                            <span class="discount-badge">(56% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7: Philips AirPods Product 1 -->
+                <div class="product-card" data-images='["assets/images/techvolt-web-host-airpods-25.png", "assets/images/techvolt-crm-airpods-26.png", "assets/images/techvolt-software-dev-airpods-27.png", "assets/images/techvolt-web-dev-airpods-28.png"]' data-category="Electronics & Mobiles" data-subcategory="AirPods / Earbuds" data-brand="Philips">
+                    <div class="product-image-wrapper">
+                        <div class="myntra-rating-pill">
+                            <span>4.8</span> <i class="bi bi-star-fill star-icon"></i> <span class="rating-pipe">|</span> <span class="rating-num-count">1.8k</span>
+                        </div>
+                        <a href="product-electronics.html?id=7">
+                            <img src="assets/images/techvolt-web-host-airpods-25.png" class="product-img" alt="Philips TAT2206 Wireless TWS Earbuds">
+                        </a>
+                        <div class="myntra-image-hover-overlay">
+                            <div class="myntra-dots-line">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="myntra-card-wishlist-btn" onclick="toggleCardWishlist(this)">
+                                <i class="bi bi-heart me-1"></i> <span>WISHLIST</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Philips</span>
+                        <h3 class="product-name"><a href="product-electronics.html?id=7">Philips TAT2206 Wireless TWS Earbuds</a></h3>
+                        <div class="product-price">
+                            <span class="current-price">Rs. 1999</span>
+                            <span class="original-price">Rs. 4999</span>
+                            <span class="discount-badge">(60% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </main>
+    </section>
+
+    <!-- Floating Sticky Elements -->
+
+    <button class="myntra-floating-bell-btn" title="Notifications">
+        <i class="bi bi-bell-fill"></i>
+    </button>
+    <!-- Footer -->
+    <!-- Reusable Footer Component -->
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/electronics.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart-fly-animation.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /cart.html
+Disallow: /checkout.html
+Disallow: /checkout-address.html
+Disallow: /checkout-payment.html
+Disallow: /account.html
+Disallow: /login.html
+Disallow: /register.html
+Disallow: /wishlist.html
+
+Sitemap: https://www.techvoltcoimbatore.com/sitemap.xml

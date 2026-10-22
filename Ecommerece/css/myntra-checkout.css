@@ -1,0 +1,735 @@
+/* ==========================================================================
+   MYNTRA-STYLE 3-STEP CHECKOUT & BAG STYLES
+   ========================================================================== */
+
+body {
+    background-color: #ffffff !important;
+    font-family: 'DM Sans', sans-serif;
+    color: #282c3f;
+}
+
+/* Minimal Top Stepper Header */
+.myntra-header {
+    background: #ffffff;
+    border-bottom: 1px solid #f5f5f6;
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+.myntra-header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-logo-myntra {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #9c27b0;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.stepper-nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.stepper-item {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #484848;
+    text-decoration: none;
+    padding-bottom: 4px;
+    position: relative;
+}
+
+.stepper-item.active {
+    color: #20bd99;
+    border-bottom: 2px solid #20bd99;
+}
+
+.stepper-divider {
+    color: #d4d5d9;
+    letter-spacing: 2px;
+}
+
+.secure-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #535766;
+}
+
+.secure-badge i {
+    color: #20bd99;
+    font-size: 16px;
+}
+
+/* Main Layout */
+.myntra-main-container {
+    max-width: 1050px;
+    margin: 30px auto 60px;
+    padding: 0 20px;
+}
+
+.myntra-box {
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    padding: 16px;
+    background: #ffffff;
+    margin-bottom: 16px;
+}
+
+/* Deliver To Address Box */
+.deliver-box {
+    background: #fff5f7;
+    border: 1px solid #ffe8ed;
+    border-radius: 4px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deliver-title {
+    font-size: 13px;
+    color: #282c3f;
+}
+
+.deliver-addr-text {
+    font-size: 12px;
+    color: #535766;
+}
+
+.btn-change-pink {
+    border: 1px solid #ff3f6c;
+    color: #ff3f6c;
+    background: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-change-pink:hover {
+    background: #ff3f6c;
+    color: #ffffff;
+}
+
+/* Offers Banner Carousel */
+.offers-banner-box {
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offers-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.offer-card-inner {
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+}
+
+.offer-img {
+    width: 32px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.offer-txt-bold {
+    font-size: 13px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.offer-txt-sub {
+    font-size: 11px;
+    color: #7e818c;
+}
+
+.arrow-icon {
+    cursor: pointer;
+    font-size: 16px;
+    color: #535766;
+}
+
+/* Items Header & Card */
+.items-select-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #282c3f;
+    padding: 10px 0;
+
+}
+
+.link-action {
+    color: #535766;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.link-action:hover {
+    color: #ff3f6c;
+}
+
+.myntra-item-card {
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.item-chk {
+    accent-color: #ff3f6c;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+}
+
+.item-thumb {
+    width: 110px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.item-brand-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.item-prod-title {
+    font-size: 13px;
+    color: #535766;
+    margin: 2px 0 6px;
+}
+
+.item-seller {
+    font-size: 11px;
+    color: #7e818c;
+    margin-bottom: 8px;
+}
+
+.item-selects-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.mini-dropdown {
+    background: #f5f5f6;
+    border: none;
+    border-radius: 2px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.stock-left-badge {
+    color: #ff3f6c;
+    font-size: 11px;
+    border: 1px solid #ff3f6c;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.item-price-flex {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.price-main {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.price-strike {
+    font-size: 12px;
+    color: #7e818c;
+    text-decoration: line-through;
+}
+
+.price-off {
+    font-size: 12px;
+    color: #ff905a;
+    font-weight: 700;
+}
+
+.return-info {
+    font-size: 12px;
+    color: #282c3f;
+}
+
+.delivery-estimate {
+    font-size: 12px;
+    color: #282c3f;
+}
+
+.item-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 18px;
+    color: #535766;
+    cursor: pointer;
+}
+
+.item-close-btn:hover {
+    color: #ff3f6c;
+}
+
+/* Wishlist Footer Link */
+.wishlist-footer-box {
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 700;
+    color: #282c3f;
+    cursor: pointer;
+}
+
+/* Right Sidebar Details */
+.right-sidebar-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #535766;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.coupons-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-apply-pink {
+    border: 1px solid #ff3f6c;
+    color: #ff3f6c;
+    background: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.donation-chips {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.chip-btn {
+    border: 1px solid #d4d5d9;
+    background: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #282c3f;
+    cursor: pointer;
+}
+
+.chip-btn.active, .chip-btn:hover {
+    border-color: #ff3f6c;
+    color: #ff3f6c;
+}
+
+.price-row-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #282c3f;
+    margin-bottom: 10px;
+}
+
+.text-pink {
+    color: #ff3f6c !important;
+}
+
+.text-green {
+    color: #03a685 !important;
+}
+
+.total-amount-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #282c3f;
+    padding-top: 12px;
+    border-top: 1px solid #eaeaec;
+}
+
+.btn-pink-place-order {
+    width: 100%;
+    background: #ff3f6c;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background 0.2s ease;
+}
+
+.btn-pink-place-order:hover {
+    background: #e6335c;
+}
+
+/* Address Step Styling */
+.default-addr-card {
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    padding: 16px;
+    margin-top: 12px;
+    background: #ffffff;
+}
+
+.addr-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.tag-home {
+    background: #e5f7f2;
+    color: #20bd99;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.addr-body-txt {
+    font-size: 13px;
+    color: #535766;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.addr-btns-flex {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.btn-outline-gray {
+    border: 1px solid #d4d5d9;
+    background: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #282c3f;
+}
+
+/* Payment Mode Step Styling */
+.payment-layout-grid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.payment-tabs-sidebar {
+    background: #f5f5f6;
+    border-right: 1px solid #eaeaec;
+}
+
+.tab-nav-btn {
+    width: 100%;
+    text-align: left;
+    padding: 14px 18px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eaeaec;
+    font-size: 13px;
+    font-weight: 700;
+    color: #282c3f;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+}
+
+.tab-nav-btn.active {
+    background: #ffffff;
+    color: #ff3f6c;
+    border-left: 4px solid #ff3f6c;
+}
+
+.payment-tab-content {
+    padding: 24px;
+    background: #ffffff;
+}
+
+.footer-payment-icons {
+    border-top: 1px solid #eaeaec;
+    padding-top: 20px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #535766;
+}
+
+/* Responsive Styles for Cart & Checkout Steps */
+@media (max-width: 991px) {
+    .myntra-main-container {
+        padding: 15px 3% 40px 3%;
+    }
+    
+    .payment-layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-tabs-sidebar {
+        display: flex;
+        overflow-x: auto;
+        border-right: none;
+        border-bottom: 1px solid #eaeaec;
+        scrollbar-width: none;
+    }
+
+    .payment-tabs-sidebar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tab-nav-btn {
+        white-space: nowrap;
+        border-bottom: none;
+        border-right: 1px solid #eaeaec;
+        padding: 12px 16px;
+    }
+
+    .tab-nav-btn.active {
+        border-left: none;
+        border-bottom: 3px solid #ff3f6c;
+    }
+}
+
+@media (max-width: 768px) {
+    .myntra-header-container {
+        padding: 0 15px;
+    }
+
+    .brand-logo-myntra {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+
+    .stepper-nav {
+        font-size: 11px;
+        gap: 6px;
+    }
+
+    .stepper-item {
+        letter-spacing: 0.5px;
+    }
+
+    .secure-badge span {
+        display: none;
+    }
+
+    .myntra-item-card {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .item-thumb {
+        width: 75px;
+        height: 95px;
+    }
+
+    .item-prod-title {
+        font-size: 12.5px;
+    }
+
+    .item-price-flex {
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .footer-payment-icons {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .items-select-header {
+        font-size: 11px;
+    }
+
+    .mini-dropdown {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+
+    .price-main {
+        font-size: 14px;
+    }
+
+    .price-strike, .price-off {
+        font-size: 11px;
+    }
+}
+
+/* Quantity Stepper (+ / - Buttons) */
+.qty-stepper-wrap {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #d4d5d9;
+    border-radius: 6px;
+    background: #ffffff;
+    overflow: hidden;
+    height: 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.qty-stepper-btn {
+    width: 28px;
+    height: 100%;
+    border: none;
+    background: #f5f5f6;
+    color: #282c3f;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    user-select: none;
+    padding: 0;
+}
+
+.qty-stepper-btn:hover:not(:disabled) {
+    background: #ff3f6c;
+    color: #ffffff;
+}
+
+.qty-stepper-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    background: #fafafa;
+    color: #b5b6ba;
+}
+
+.qty-stepper-val {
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #282c3f;
+    min-width: 28px;
+    text-align: center;
+    background: #ffffff;
+}
+
+/* Brand Logo Text & Double Color */
+.brand-logo-text {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1;
+}
+
+.brand-name {
+    display: inline-flex;
+    align-items: baseline;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: 0.3px;
+}
+
+.brand-text-tech {
+    color: #282c3f;
+    font-weight: 900;
+    letter-spacing: -0.2px;
+}
+
+.brand-text-mart {
+    color: #ff3f6c;
+    font-weight: 800;
+    margin-left: 1px;
+    background: linear-gradient(135deg, #ff3f6c 0%, #ff527b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.brand-sample-tag {
+    font-size: 8px;
+    font-weight: 700;
+    color: #8c8d94;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-top: 1px;
+    display: block;
+    line-height: 1;
+}
+

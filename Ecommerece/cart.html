@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Techvolt Software | Web Hosting | Saibaba Colony</title>
+    <meta name="description" content="Review your shopping bag, order summary, apply discount coupon codes, and proceed to secure checkout.">
+    <meta name="keywords" content="Techvolt Software, Web Hosting, shopping cart, order review, checkout bag">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://www.techvoltcoimbatore.com/cart.html">
+    <link rel="icon" type="image/png" href="assets/images/techvolt-software-development-brand-favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/techvolt-software-development-brand-favicon.png">
+    <meta property="og:site_name" content="TechVoltMart">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.techvoltcoimbatore.com/cart.html">
+    <meta property="og:title" content="Techvolt Software | Web Hosting | Shopping Cart & Bag">
+    <meta property="og:description" content="Review your shopping bag, order summary, apply discount coupon codes, and proceed to secure checkout.">
+    <meta property="og:image" content="https://www.techvoltcoimbatore.com/assets/images/techvolt-software-development-brand-logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Techvolt Software | Web Development | Shopping Cart & Bag">
+    <meta name="twitter:description" content="Review your shopping bag, order summary, apply discount coupon codes, and proceed to secure checkout.">
+    <meta name="twitter:image" content="https://www.techvoltcoimbatore.com/assets/images/techvolt-software-development-brand-logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="css/myntra-checkout.css">
+    <link rel="stylesheet" href="css/cart-fly-animation.css">
+</head>
+<body>
+
+    <!-- Top Stepper Header -->
+    <header class="myntra-header">
+        <div class="myntra-header-container">
+            <a href="index.html" class="brand-logo-myntra" style="display: inline-flex; align-items: center; text-decoration: none;">
+                <img src="assets/images/techvolt-software-development-brand-logo.png" alt="TechVoltMart Logo" class="brand-logo-img" style="height: 32px; width: 32px; margin-right: 8px; border-radius: 50%;">
+                <span class="brand-logo-text" style="display: inline-flex; flex-direction: column; justify-content: center; line-height: 1.1;">
+                    <span style="color: #111; font-weight: 800; font-size: 18px;">TechVoltMart</span>
+                    <span class="brand-sample-tag" style="font-size: 8px; font-weight: 700; color: #8c8d94; letter-spacing: 1.5px; text-transform: uppercase;">SAMPLE WEBSITE</span>
+                </span>
+            </a>
+
+            <ul class="stepper-nav">
+                <li><a href="cart.html" class="stepper-item active">SHOPPING BAG</a></li>
+            </ul>
+
+            <div class="header-right-group">
+                <div class="secure-badge">
+                    <i class="bi bi-shield-check"></i>
+                    <span>100% SECURE</span>
+                </div>
+                <a href="index.html" class="header-close-btn" title="Close and return to Home" aria-label="Close and return to Home">
+                    <i class="bi bi-x-lg"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="myntra-main-container">
+        <div class="row g-4">
+
+            <!-- Left Column: Cart Items -->
+            <div class="col-lg-7">
+
+                <!-- Offers Carousel Box -->
+                <div class="offers-banner-box mb-3">
+                    <div class="offers-title"><i class="bi bi-percent text-pink me-1"></i> Offers (16)</div>
+                    <i class="bi bi-chevron-left arrow-icon"></i>
+                    <div class="offer-card-inner">
+                        <i class="bi bi-credit-card-2-front-fill text-purple fs-5"></i>
+                        <div>
+                            <div class="offer-txt-bold">7.5% Assured Cashback*</div>
+                            <div class="offer-txt-sub">on a minimum spend of ₹100. T&C</div>
+                        </div>
+                    </div>
+                    <i class="bi bi-chevron-right arrow-icon"></i>
+                </div>
+
+                <!-- Items Select Header -->
+                <div class="items-select-header" id="itemsSelectHeader">
+                    <div>
+                        <input type="checkbox" class="item-chk me-2" id="selectAllChk" checked>
+                        <span id="selectedItemsText">0/0 ITEMS SELECTED</span>
+                    </div>
+                    <div>
+                        <span class="link-action" id="btnRemoveAll">REMOVE</span>
+                        <span class="link-action" id="btnMoveToWishlist">MOVE TO WISHLIST</span>
+                    </div>
+                </div>
+
+                <!-- Dynamic Cart Items List -->
+                <div id="cartItemsList">
+                    <!-- Dynamic cards injected by myntra-checkout.js -->
+                </div>
+
+                <!-- Add From Wishlist Box -->
+                <div class="wishlist-footer-box" onclick="window.location.href='wishlist.html'">
+                    <span><i class="bi bi-bookmark me-2"></i> Add More From Wishlist</span>
+                    <i class="bi bi-chevron-right"></i>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Coupons & Price Summary -->
+            <div class="col-lg-5">
+                
+                <!-- Coupons Box -->
+                <div class="myntra-box">
+                    <div class="right-sidebar-title">COUPONS</div>
+                    <div class="coupons-box">
+                        <div><i class="bi bi-tag-fill me-2 text-pink"></i> <strong>Apply Coupons</strong></div>
+                        <button class="btn-apply-pink" id="btnApplyCoupon">APPLY</button>
+                    </div>
+                    <div id="couponMsg" class="small mt-1" style="display: none;"></div>
+                </div>
+
+                <!-- Donation Box -->
+                <div class="myntra-box">
+                    <div class="right-sidebar-title">SUPPORT TRANSFORMATIVE SOCIAL WORK IN INDIA</div>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input item-chk" type="checkbox" id="chkDonate">
+                        <label class="form-check-label fw-bold small text-dark ms-1" for="chkDonate">
+                            Donate and make a difference
+                        </label>
+                    </div>
+                    <div class="donation-chips">
+                        <button class="chip-btn" data-amount="10">₹10</button>
+                        <button class="chip-btn" data-amount="20">₹20</button>
+                        <button class="chip-btn active" data-amount="50">₹50</button>
+                        <button class="chip-btn" data-amount="100">₹100</button>
+                    </div>
+                </div>
+
+                <!-- Price Details Box -->
+                <div class="myntra-box">
+                    <div class="right-sidebar-title" id="summaryHeader">PRICE DETAILS (0 Items)</div>
+                    
+                    <div class="price-row-item">
+                        <span>Total MRP</span>
+                        <span id="summaryTotalMRP">₹0</span>
+                    </div>
+
+                    <div class="price-row-item text-green">
+                        <span>Discount on MRP</span>
+                        <span id="summaryDiscountMRP">- ₹0</span>
+                    </div>
+
+                    <div class="price-row-item text-pink" id="couponRowItem">
+                        <span>Coupon Discount</span>
+                        <span id="summaryCouponDiscount">Apply Coupon</span>
+                    </div>
+
+                    <div class="price-row-item">
+                        <span>Platform Fee</span>
+                        <span id="summaryPlatformFee">₹0</span>
+                    </div>
+
+                    <div class="total-amount-row">
+                        <span>Total Amount</span>
+                        <span id="summaryTotalAmount">₹0</span>
+                    </div>
+
+                    <button class="btn-pink-place-order" id="btnPlaceOrder" onclick="placeFinalOrder()">PLACE ORDER</button>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart-fly-animation.js"></script>
+    <script src="js/myntra-checkout.js"></script>
+</body>
+</html>

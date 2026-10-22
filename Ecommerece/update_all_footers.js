@@ -1,0 +1,127 @@
+const fs = require('fs');
+const path = require('path');
+
+const richFooterHTML = `    <!-- Comprehensive Rich Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-columns-grid">
+                <!-- Column 1: Online Shopping (Part 1) -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">ONLINE SHOPPING</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html" style="font-weight: 700; color: #ff3f6c;">Home Page</a></li>
+                        <li><a href="men.html">Men Fashion</a></li>
+                        <li><a href="ethnic.html">Women</a></li>
+                        <li><a href="kids.html">Kids & Toys</a></li>
+                        <li><a href="home-kitchen.html">Home & Living</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Online Shopping (Part 2) -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title empty-col-title d-none d-sm-block">&nbsp;</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="beauty.html">Beauty & Health</a></li>
+                        <li><a href="jewellery.html">Jewellery & Accessories</a></li>
+                        <li><a href="bags.html">Bags & Footwear</a></li>
+                        <li><a href="electronics.html">Electronics & Mobiles</a></li>
+                        <li><a href="watches.html">Watches & Wearables</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: App & Connect -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">EXPERIENCE SABLE APP</h4>
+                    <div class="footer-app-badges">
+                        <a href="#" class="app-badge-btn"><i class="bi bi-google-play"></i> <span>Google Play</span></a>
+                        <a href="#" class="app-badge-btn"><i class="bi bi-apple"></i> <span>App Store</span></a>
+                    </div>
+                    
+                    <h4 class="footer-col-title mt-4">KEEP IN TOUCH</h4>
+                    <div class="footer-social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 4: Quality Promises -->
+                <div class="footer-col footer-trust-col">
+                    <div class="trust-badge-item">
+                        <div class="trust-icon"><i class="bi bi-patch-check-fill"></i></div>
+                        <div class="trust-text">
+                            <strong>100% ORIGINAL</strong>
+                            <span>guarantee for all products at sable.com</span>
+                        </div>
+                    </div>
+                    <div class="trust-badge-item">
+                        <div class="trust-icon"><i class="bi bi-arrow-counterclockwise"></i></div>
+                        <div class="trust-text">
+                            <strong>Return within 14days</strong>
+                            <span>of receiving your order</span>
+                        </div>
+                    </div>
+                    <div class="trust-badge-item">
+                        <div class="trust-icon"><i class="bi bi-truck"></i></div>
+                        <div class="trust-text">
+                            <strong>Free Delivery</strong>
+                            <span>on all orders above ₹999</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <!-- Popular Searches -->
+            <div class="footer-popular-searches">
+                <h5 class="popular-searches-title">POPULAR SEARCHES</h5>
+                <p class="popular-searches-links">
+                    <a href="men.html">Men Shirts</a> | <a href="men.html">T-Shirts</a> | <a href="ethnic.html">Anarkali Suits</a> | <a href="ethnic.html">Banarasi Sarees</a> | <a href="ethnic.html">Bridal Lehengas</a> | <a href="women-western.html">Maxi Dresses</a> | <a href="women-western.html">Crop Tops</a> | <a href="bags.html">Tote Bags</a> | <a href="bags.html">Heels</a> | <a href="watches.html">Smartwatches</a> | <a href="watches.html">Chronograph Watches</a> | <a href="jewellery.html">Kundan Sets</a> | <a href="beauty.html">Lipsticks</a> | <a href="beauty.html">Face Serums</a> | <a href="home-kitchen.html">Bedsheets</a> | <a href="electronics.html">Bluetooth Speakers</a> | <a href="kids.html">Frocks & Dresses</a>
+                </p>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom-flex">
+                <div class="office-address">
+                    <strong>Registered Office Address:</strong> 1st Floor, Sri Sairam Tower, 7, NSR Rd, Nesavaalar Colony, Saibaba Koil, Coimbatore, Tamil Nadu 641011.
+                </div>
+                <div class="payment-methods">
+                    <span>100% Secure Payments:</span>
+                    <i class="bi bi-credit-card-2-front-fill" title="Credit / Debit Card"></i>
+                    <i class="bi bi-wallet2" title="UPI & Wallet"></i>
+                    <i class="bi bi-bank" title="Net Banking"></i>
+                    <i class="bi bi-cash-stack" title="Cash On Delivery"></i>
+                </div>
+            </div>
+
+            <div class="footer-copyright-line">
+                <p>&copy; 2026 <strong>TechVoltMart.</strong> All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>`;
+
+const targetFiles = [
+    'bags.html', 'beauty.html', 'electronics.html', 'ethnic.html',
+    'home-kitchen.html', 'index.html', 'jewellery.html', 'kids.html',
+    'men.html', 'popular.html', 'product-bag.html', 'product-beauty.html',
+    'product-electronics.html', 'product-ethnic.html', 'product-home-kitchen.html',
+    'product-jewellery.html', 'product-kids.html', 'product-men.html',
+    'product-popular.html', 'product-watches.html', 'watches.html', 'wishlist.html'
+];
+
+targetFiles.forEach(file => {
+    const filePath = path.join(__dirname, file);
+    if (!fs.existsSync(filePath)) return;
+
+    let content = fs.readFileSync(filePath, 'utf8');
+    const footerRegex = /<footer[\s\S]*?<\/footer>/i;
+    
+    if (footerRegex.test(content)) {
+        content = content.replace(footerRegex, richFooterHTML);
+        fs.writeFileSync(filePath, content, 'utf8');
+        console.log(`Updated footer in ${file}`);
+    }
+});

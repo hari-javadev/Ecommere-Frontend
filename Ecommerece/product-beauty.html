@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+
+    <title>Techvolt Software | Digital Marketing | Coimbatore</title>
+    <meta name="description" content="View ingredient formulations, shade guides, customer reviews, and application tips for beauty and skincare items.">
+    <meta name="keywords" content="Techvolt Software, Digital Marketing, beauty product details, lipstick shades, facial cleanser specs">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.techvoltcoimbatore.com/product-beauty.html">
+    <link rel="icon" type="image/png" href="assets/images/techvolt-software-development-brand-favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/techvolt-software-development-brand-favicon.png">
+    <meta property="og:site_name" content="TechVoltMart">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://www.techvoltcoimbatore.com/product-beauty.html">
+    <meta property="og:title" content="Techvolt Software | Digital Marketing | Beauty Product Details">
+    <meta property="og:description" content="View ingredient formulations, shade guides, customer reviews, and application tips for beauty and skincare items.">
+    <meta property="og:image" content="https://www.techvoltcoimbatore.com/assets/images/techvolt-software-development-brand-logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Techvolt Software | Digital Marketing | Beauty Product Details">
+    <meta name="twitter:description" content="View ingredient formulations, shade guides, customer reviews, and application tips for beauty and skincare items.">
+    <meta name="twitter:image" content="https://www.techvoltcoimbatore.com/assets/images/techvolt-software-development-brand-logo.png">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product-beauty.css">
+    <link rel="stylesheet" href="css/cart-fly-animation.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- Reusable Navbar Component -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Breadcrumb Bar -->
+    <div class="product-breadcrumb-bar" style="padding: 15px 4%; background: #fdfbf7; border-bottom: 1px solid #efe4d8; font-size: 13px;">
+        <div class="container-fluid p-0">
+            <a href="index.html" style="color: #8b6548; text-decoration: none;">Home</a>
+            <span class="sep" style="margin: 0 6px; color: #ccc;">/</span>
+            <a href="beauty.html" style="color: #8b6548; text-decoration: none;" class="cat-crumb">Beauty & Health</a>
+            <span class="sep" style="margin: 0 6px; color: #ccc;">/</span>
+            <span class="active-crumb" style="color: #333; font-weight: 600;">Product Details</span>
+        </div>
+    </div>
+
+    <!-- Main Myntra-Style Product Section -->
+    <section class="myntra-product-container" id="overview">
+        <!-- Left Side: 2-Column Image Grid (Dynamically Populated by JS) -->
+        <div class="myntra-4-image-grid" id="productImageGrid">
+            <!-- Dynamic image grid cards generated from p.images -->
+        </div>
+
+        <!-- Right Sticky Column: Product Info & Purchase Controls -->
+        <div class="myntra-product-info-sticky">
+            <div>
+                <h1 class="myntra-brand-heading product-brand-tag">TechVoltMart</h1>
+                <div class="myntra-title-subheading product-detail-title">Product Name</div>
+                
+                <div class="product-rating-summary d-flex align-items-center gap-2 mb-2" style="font-size: 13px;">
+                    <span class="badge bg-success" style="padding: 5px 8px; font-weight: 700;">4.8 <i class="bi bi-star-fill" style="font-size: 10px;"></i></span>
+                    <span class="text-muted">| 1.2k Ratings & Reviews</span>
+                </div>
+            </div>
+
+            <hr style="border-color: #eaeaec; margin: 5px 0 15px 0;">
+
+            <!-- Price Box -->
+            <div>
+                <div class="myntra-price-row">
+                    <span class="myntra-price-current price-current">Rs. 0</span>
+                    <span class="myntra-price-mrp price-original">MRP Rs. 0</span>
+                    <span class="myntra-price-discount price-discount-badge">(0% OFF)</span>
+                </div>
+                <div class="myntra-tax-text">inclusive of all taxes</div>
+            </div>
+
+            <!-- Size Selection (For Apparel & Footwear) -->
+            <div class="size-selection-box" style="display: none;">
+                <div class="myntra-size-header-row">
+                    <span class="myntra-size-title">SELECT SIZE</span>
+                    <a href="#" class="myntra-size-chart-link">SIZE CHART &gt;</a>
+                </div>
+                <div class="myntra-size-pills">
+                    <button class="myntra-size-btn active">S <span class="myntra-left-tag">2 left</span></button>
+                    <button class="myntra-size-btn">M</button>
+                    <button class="myntra-size-btn">L</button>
+                    <button class="myntra-size-btn">XL</button>
+                    <button class="myntra-size-btn">XXL</button>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="myntra-actions-row">
+                <button class="myntra-btn-add-bag btn-add-to-bag" id="btnAddToBag">
+                    <i class="bi bi-bag-fill"></i> ADD TO BAG
+                </button>
+                <button class="myntra-btn-wishlist btn-wishlist">
+                    <i class="bi bi-heart"></i> WISHLIST
+                </button>
+            </div>
+
+            <!-- Delivery Options Box -->
+            <div class="myntra-delivery-box">
+                <div class="myntra-delivery-title"><i class="bi bi-truck"></i> DELIVERY OPTIONS</div>
+                <div class="myntra-pincode-input-wrap">
+                    <div class="myntra-pincode-text">
+                        <input type="text" placeholder="Enter Pincode" value="636003" style="border: none; outline: none; width: 140px; font-weight: 700; color: #282c3f; background: transparent;">
+                        <i class="bi bi-check-circle-fill myntra-pincode-check"></i>
+                    </div>
+                    <button class="myntra-btn-change-pin">CHECK</button>
+                </div>
+                <ul class="myntra-delivery-bullets">
+                    <li><i class="bi bi-truck"></i> Get it by <strong>Sat, Sep 19</strong></li>
+                    <li><i class="bi bi-cash-stack"></i> Pay on delivery available</li>
+                    <li><i class="bi bi-arrow-counterclockwise"></i> Easy 7 days return & exchange available</li>
+                    <li><i class="bi bi-shield-check"></i> 100% Original Products</li>
+                </ul>
+            </div>
+
+            <!-- Best Offers Card -->
+            <div class="myntra-offers-card">
+                <div class="myntra-offers-title"><i class="bi bi-tag-fill" style="color: #ff905a;"></i> BEST OFFERS</div>
+                <div class="myntra-offer-item" style="background: #fff8f5; border: 1px dashed #ff905a; padding: 12px; border-radius: 6px; font-size: 13px;">
+                    <strong>Best Price: <span style="color: #ff3f6c; font-weight: 700;">Special Price Applicable</span></strong>
+                    <ul class="mb-0 ps-3 mt-1" style="font-size: 12px; color: #535766;">
+                        <li>Applicable on: All TechVoltMart Collections</li>
+                        <li>Coupon code: <span style="font-weight: 700; background: #eee; padding: 2px 6px; border-radius: 3px;">TECHVOLTMART10</span></li>
+                        <li>Get Flat 10% Off on prepaid orders</li>
+                        <li>100% Secure Checkout with PayLater & UPI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    
+    <!-- Customer Feedback / Ratings & Reviews Section -->
+    <section class="customer-reviews-section" id="customer-reviews" style="padding: 40px 4%; background: #ffffff; border-top: 1px solid #eaeaec;">
+        <div class="container-fluid p-0" style="max-width: 1200px; margin: 0 auto;">
+            <h3 style="font-size: 18px; font-weight: 700; color: #282c3f; text-transform: uppercase; margin-bottom: 24px;">
+                RATINGS &amp; CUSTOMER REVIEWS
+            </h3>
+            <div id="productReviewsContainer">
+                <!-- Dynamically populated by JS: Rating Summary + Review Cards OR No Reviews Empty State -->
+            </div>
+        </div>
+    </section>
+
+<section class="related-products-section" style="padding: 40px 4% 80px 4%; background: #ffffff; border-top: 1px solid #eaeaec;">
+        <div class="section-header text-center mb-4">
+            <h2 class="section-title" style="font-weight: 800; font-size: 24px; color: #282c3f;">You May Also Like — Related Products</h2>
+        </div>
+        <div class="related-products-grid products-grid related-grid">
+            <!-- Dynamic Related Product Cards -->
+        </div>
+    </section>
+
+
+    <!-- Reusable Footer Component -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/product-beauty.js"></script>
+    <script src="js/cart-fly-animation.js"></script>
+</body>
+
+</html>
