@@ -30,7 +30,7 @@ const HOME_KITCHEN_PRODUCTS_DATA = [
         reviewsCount: "1.15k",
         category: "Home & Kitchen",
         subcategory: "Bedding & Linen",
-        images: ["assets/images/techvolt-full-dev-tawa-5.png", "assets/images/techvolt-mern-dev-tawa-6.png", "assets/images/techvolt-php-dev-tawa-7.png", "assets/images/techvolt-python-dev-tawa-8.png"]
+        images: ["assets/images/techvolt-full-dev-tawa-5.png", "assets/images/techvolt-mern-dev-tawa-6.png", "assets/images/techvolt-php-dev-tawa-7.png", "assets/images/techvolt-front-dev-tawa-9.png"]
     },
     {
         id: 3,

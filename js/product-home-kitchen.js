@@ -49,13 +49,13 @@ const HOME_KITCHEN_PRODUCTS_DATA = [
             "assets/images/techvolt-full-dev-tawa-5.png",
             "assets/images/techvolt-mern-dev-tawa-6.png",
             "assets/images/techvolt-php-dev-tawa-7.png",
-            "assets/images/techvolt-python-dev-tawa-8.png"
+            "assets/images/techvolt-front-dev-tawa-9.png"
         ],
         "gallery": [
             { "label": "Angle 1", "url": "assets/images/techvolt-full-dev-tawa-5.png", "objectPosition": "center center", "scale": "1.0" },
             { "label": "Angle 2", "url": "assets/images/techvolt-mern-dev-tawa-6.png", "objectPosition": "center center", "scale": "1.0" },
             { "label": "Angle 3", "url": "assets/images/techvolt-php-dev-tawa-7.png", "objectPosition": "center center", "scale": "1.0" },
-            { "label": "Angle 4", "url": "assets/images/techvolt-python-dev-tawa-8.png", "objectPosition": "center center", "scale": "1.0" }
+            { "label": "Angle 4", "url": "assets/images/techvolt-front-dev-tawa-9.png", "objectPosition": "center center", "scale": "1.0" }
         ]
     },
     {
